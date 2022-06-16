@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite package="org.checkstyle" time="0" tests="11" errors="0" name="checkstyle">
+<testcase time="0" name="monopoly/Board.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="monopoly/ComputerPlayer.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="monopoly/ConsoleUi.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="monopoly/Dice.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="monopoly/Free.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="monopoly/Game.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="monopoly/HumanPlayer.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="monopoly/Player.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="monopoly/Property.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="monopoly/Start.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="monopoly/Tile.java" classname="CheckStyle Issues">
+</testcase></testsuite>

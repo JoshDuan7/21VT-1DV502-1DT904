@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.1" sequence="0" timestamp="1614693864883" analysisTimestamp="1614693864886" release="1.0-SNAPSHOT">
+  <Project projectName="monopoly (spotbugsMain)">
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/ConsoleUi.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/ConsoleUi$Action.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/Board.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/Property.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/Game.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/HumanPlayer.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/ComputerPlayer.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/HumanPlayer$1.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/Dice.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/Player.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/ComputerPlayer$1.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/Tile.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/Free.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/build/classes/java/main/monopoly/Start.class</Jar>
+    <SrcDir>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/resources</SrcDir>
+    <SrcDir>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/java</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 2 Mar 2021 15:04:24 +0100" total_classes="14" referenced_classes="56" total_bugs="0" total_size="489" num_packages="1" java_version="11.0.9.1" vm_version="11.0.9.1+1" cpu_seconds="6.59" clock_seconds="4.94" peak_mbytes="184.42" alloc_mbytes="512.00" gc_seconds="0.14">
+    <FileStats path="monopoly/Board.java" bugCount="0" size="17"/>
+    <FileStats path="monopoly/ComputerPlayer.java" bugCount="0" size="65"/>
+    <FileStats path="monopoly/ConsoleUi.java" bugCount="0" size="155"/>
+    <FileStats path="monopoly/Dice.java" bugCount="0" size="19"/>
+    <FileStats path="monopoly/Free.java" bugCount="0" size="10"/>
+    <FileStats path="monopoly/Game.java" bugCount="0" size="69"/>
+    <FileStats path="monopoly/HumanPlayer.java" bugCount="0" size="65"/>
+    <FileStats path="monopoly/Player.java" bugCount="0" size="7"/>
+    <FileStats path="monopoly/Property.java" bugCount="0" size="37"/>
+    <FileStats path="monopoly/Start.java" bugCount="0" size="14"/>
+    <FileStats path="monopoly/Tile.java" bugCount="0" size="31"/>
+    <PackageStats package="monopoly" total_bugs="0" total_types="14" total_size="489">
+      <ClassStats class="monopoly.Board" sourceFile="Board.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="monopoly.ComputerPlayer" sourceFile="ComputerPlayer.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="monopoly.ComputerPlayer$1" sourceFile="ComputerPlayer.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="monopoly.ConsoleUi" sourceFile="ConsoleUi.java" interface="false" size="142" bugs="0"/>
+      <ClassStats class="monopoly.ConsoleUi$Action" sourceFile="ConsoleUi.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="monopoly.Dice" sourceFile="Dice.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="monopoly.Free" sourceFile="Free.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="monopoly.Game" sourceFile="Game.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="monopoly.HumanPlayer" sourceFile="HumanPlayer.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="monopoly.HumanPlayer$1" sourceFile="HumanPlayer.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="monopoly.Player" sourceFile="Player.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="monopoly.Property" sourceFile="Property.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="monopoly.Start" sourceFile="Start.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="monopoly.Tile" sourceFile="Tile.java" interface="false" size="31" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="862" invocations="507" avgMicrosecondsPerInvocation="1702" maxMicrosecondsPerInvocation="57464" standardDeviationMicrosecondsPerInvocation="4515"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="251" invocations="56" avgMicrosecondsPerInvocation="4493" maxMicrosecondsPerInvocation="42654" standardDeviationMicrosecondsPerInvocation="7579"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="221" invocations="56" avgMicrosecondsPerInvocation="3963" maxMicrosecondsPerInvocation="60689" standardDeviationMicrosecondsPerInvocation="9216"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="182" invocations="223" avgMicrosecondsPerInvocation="820" maxMicrosecondsPerInvocation="27291" standardDeviationMicrosecondsPerInvocation="2294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="130" invocations="95" avgMicrosecondsPerInvocation="1370" maxMicrosecondsPerInvocation="26819" standardDeviationMicrosecondsPerInvocation="3602"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="116" invocations="95" avgMicrosecondsPerInvocation="1224" maxMicrosecondsPerInvocation="15550" standardDeviationMicrosecondsPerInvocation="2103"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="110" invocations="469" avgMicrosecondsPerInvocation="235" maxMicrosecondsPerInvocation="6652" standardDeviationMicrosecondsPerInvocation="591"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="104" invocations="56" avgMicrosecondsPerInvocation="1859" maxMicrosecondsPerInvocation="20574" standardDeviationMicrosecondsPerInvocation="3585"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="100" invocations="98" avgMicrosecondsPerInvocation="1027" maxMicrosecondsPerInvocation="18514" standardDeviationMicrosecondsPerInvocation="2132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="99" invocations="95" avgMicrosecondsPerInvocation="1045" maxMicrosecondsPerInvocation="19837" standardDeviationMicrosecondsPerInvocation="2245"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="97" invocations="100" avgMicrosecondsPerInvocation="971" maxMicrosecondsPerInvocation="12129" standardDeviationMicrosecondsPerInvocation="1653"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="95" invocations="95" avgMicrosecondsPerInvocation="1000" maxMicrosecondsPerInvocation="9029" standardDeviationMicrosecondsPerInvocation="1347"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="81" invocations="511" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="20631" standardDeviationMicrosecondsPerInvocation="957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="78" invocations="76" avgMicrosecondsPerInvocation="1032" maxMicrosecondsPerInvocation="18247" standardDeviationMicrosecondsPerInvocation="2542"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="68" invocations="56" avgMicrosecondsPerInvocation="1218" maxMicrosecondsPerInvocation="12127" standardDeviationMicrosecondsPerInvocation="2190"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="64" invocations="56" avgMicrosecondsPerInvocation="1144" maxMicrosecondsPerInvocation="15367" standardDeviationMicrosecondsPerInvocation="2655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="61" invocations="56" avgMicrosecondsPerInvocation="1104" maxMicrosecondsPerInvocation="9584" standardDeviationMicrosecondsPerInvocation="1954"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="58" invocations="95" avgMicrosecondsPerInvocation="620" maxMicrosecondsPerInvocation="18998" standardDeviationMicrosecondsPerInvocation="2203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="57" invocations="14" avgMicrosecondsPerInvocation="4129" maxMicrosecondsPerInvocation="49771" standardDeviationMicrosecondsPerInvocation="12684"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="53" invocations="84" avgMicrosecondsPerInvocation="631" maxMicrosecondsPerInvocation="18593" standardDeviationMicrosecondsPerInvocation="2082"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="52" invocations="56" avgMicrosecondsPerInvocation="937" maxMicrosecondsPerInvocation="29771" standardDeviationMicrosecondsPerInvocation="4262"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="49" invocations="56" avgMicrosecondsPerInvocation="875" maxMicrosecondsPerInvocation="10584" standardDeviationMicrosecondsPerInvocation="1770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="47" invocations="56" avgMicrosecondsPerInvocation="855" maxMicrosecondsPerInvocation="25712" standardDeviationMicrosecondsPerInvocation="3440"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="47" invocations="14" avgMicrosecondsPerInvocation="3411" maxMicrosecondsPerInvocation="41421" standardDeviationMicrosecondsPerInvocation="10650"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="47" invocations="56" avgMicrosecondsPerInvocation="849" maxMicrosecondsPerInvocation="11031" standardDeviationMicrosecondsPerInvocation="1919"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="40" invocations="14" avgMicrosecondsPerInvocation="2907" maxMicrosecondsPerInvocation="19677" standardDeviationMicrosecondsPerInvocation="4938"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="39" invocations="14" avgMicrosecondsPerInvocation="2843" maxMicrosecondsPerInvocation="28359" standardDeviationMicrosecondsPerInvocation="7120"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="37" invocations="14" avgMicrosecondsPerInvocation="2703" maxMicrosecondsPerInvocation="17624" standardDeviationMicrosecondsPerInvocation="5102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="37" invocations="103" avgMicrosecondsPerInvocation="361" maxMicrosecondsPerInvocation="10931" standardDeviationMicrosecondsPerInvocation="1115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="35" invocations="14" avgMicrosecondsPerInvocation="2540" maxMicrosecondsPerInvocation="15211" standardDeviationMicrosecondsPerInvocation="4572"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

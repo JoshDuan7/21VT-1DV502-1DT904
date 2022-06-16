@@ -1,0 +1,22 @@
+{0 CheckStyle Issues in /Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/java/monopoly/Board.java
+Ñ0 CheckStyle Issues in /Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/java/monopoly/ComputerPlayer.java
+0 CheckStyle Issues in /Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/java/monopoly/ConsoleUi.java
+z0 CheckStyle Issues in /Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/java/monopoly/Dice.java
+z0 CheckStyle Issues in /Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/java/monopoly/Free.java
+z0 CheckStyle Issues in /Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/java/monopoly/Game.java
+Å0 CheckStyle Issues in /Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/java/monopoly/HumanPlayer.java
+|0 CheckStyle Issues in /Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/java/monopoly/Player.java
+~0 CheckStyle Issues in /Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/java/monopoly/Property.java
+{0 CheckStyle Issues in /Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/java/monopoly/Start.java
+z0 CheckStyle Issues in /Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment3/assignment-3/src/main/java/monopoly/Tile.java
+(0 FindBugs Issues in monopoly/Dice.java
+(0 FindBugs Issues in monopoly/Game.java
+)0 FindBugs Issues in monopoly/Board.java
+(0 FindBugs Issues in monopoly/Tile.java
+/0 FindBugs Issues in monopoly/HumanPlayer.java
+-0 FindBugs Issues in monopoly/ConsoleUi.java
+*0 FindBugs Issues in monopoly/Player.java
+20 FindBugs Issues in monopoly/ComputerPlayer.java
+(0 FindBugs Issues in monopoly/Free.java
+)0 FindBugs Issues in monopoly/Start.java
+,0 FindBugs Issues in monopoly/Property.java

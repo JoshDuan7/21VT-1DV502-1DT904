@@ -1,0 +1,8 @@
+monopoly/CodeQualityTests.java
+ monopoly.CodeQualityTests
+ monopoly.CodeQualityTests$Failure
+ monopoly.CodeQualityTests$TestCase
+monopoly/TierOneTests.java
+ monopoly.TierOneTests
+ monopoly.TierOneTests$DummyPlayer
+ monopoly.TierOneTests$DummyTile

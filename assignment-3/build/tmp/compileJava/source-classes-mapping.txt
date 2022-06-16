@@ -1,0 +1,25 @@
+monopoly/Dice.java
+ monopoly.Dice
+monopoly/Player.java
+ monopoly.Player
+monopoly/Free.java
+ monopoly.Free
+monopoly/Tile.java
+ monopoly.Tile
+monopoly/Start.java
+ monopoly.Start
+monopoly/Property.java
+ monopoly.Property
+monopoly/Board.java
+ monopoly.Board
+monopoly/Game.java
+ monopoly.Game
+monopoly/HumanPlayer.java
+ monopoly.HumanPlayer
+ monopoly.HumanPlayer$1
+monopoly/ConsoleUi.java
+ monopoly.ConsoleUi
+ monopoly.ConsoleUi$Action
+monopoly/ComputerPlayer.java
+ monopoly.ComputerPlayer
+ monopoly.ComputerPlayer$1

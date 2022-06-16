@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite package="org.spotbugs" time="0" tests="11" errors="0" name="findbugs">
+<testcase time="0" name="monopoly/Dice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="monopoly/Game.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="monopoly/Board.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="monopoly/Tile.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="monopoly/HumanPlayer.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="monopoly/ConsoleUi.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="monopoly/Player.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="monopoly/ComputerPlayer.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="monopoly/Free.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="monopoly/Start.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="monopoly/Property.java" classname="FindBugs Issues">
+</testcase></testsuite>
