@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite package="org.spotbugs" time="0" tests="14" errors="24" name="findbugs">
+<testcase time="0" name="recipe/SearchByIngredientName.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="recipe/Ingredient.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="recipe/IngredientInRecipe.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="recipe/RecipeMenuBehaviours.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="recipe/Main.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="recipe/ConsoleUi.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 15-584 
+Found reliance on default encoding in promptForRecipePortionUnit(): new 
+  java.io.InputStreamReader(InputStream) 
+Reliance on default encoding 
+Found a call to a method which will perform a byte to String (or String to 
+  byte) conversion, and will assume that the default platform encoding is 
+  suitable. This will cause the application behaviour to vary between 
+  platforms. Use an alternative API and specify a charset name or Charset 
+  object explicitly.
+----------------
+lines: 15-584 
+Dereference of the result of readLine() without nullcheck in 
+  promptForCreateIngredient(String) 
+Dereference of the result of readLine() without nullcheck 
+The result of invoking readLine() is dereferenced without checking to see 
+  if the result is null. If there are no more lines of text to read, 
+  readLine() will return null and dereferencing that will generate a null 
+  pointer exception.
+----------------
+lines: 15-584 
+Dereference of the result of readLine() without nullcheck in 
+  promptForIngredientName() 
+Dereference of the result of readLine() without nullcheck 
+The result of invoking readLine() is dereferenced without checking to see 
+  if the result is null. If there are no more lines of text to read, 
+  readLine() will return null and dereferencing that will generate a null 
+  pointer exception.
+----------------
+lines: 15-584 
+Dereference of the result of readLine() without nullcheck in 
+  promptForIngredientSelection() 
+Dereference of the result of readLine() without nullcheck 
+The result of invoking readLine() is dereferenced without checking to see 
+  if the result is null. If there are no more lines of text to read, 
+  readLine() will return null and dereferencing that will generate a null 
+  pointer exception.
+----------------
+lines: 15-584 
+Dereference of the result of readLine() without nullcheck in 
+  promptForPortionRequest() 
+Dereference of the result of readLine() without nullcheck 
+The result of invoking readLine() is dereferenced without checking to see 
+  if the result is null. If there are no more lines of text to read, 
+  readLine() will return null and dereferencing that will generate a null 
+  pointer exception.
+----------------
+lines: 15-584 
+Dereference of the result of readLine() without nullcheck in 
+  promptForRecipePortionNum() 
+Dereference of the result of readLine() without nullcheck 
+The result of invoking readLine() is dereferenced without checking to see 
+  if the result is null. If there are no more lines of text to read, 
+  readLine() will return null and dereferencing that will generate a null 
+  pointer exception.
+----------------
+lines: 15-584 
+Dereference of the result of readLine() without nullcheck in 
+  promptForRecipePortionUnit() 
+Dereference of the result of readLine() without nullcheck 
+The result of invoking readLine() is dereferenced without checking to see 
+  if the result is null. If there are no more lines of text to read, 
+  readLine() will return null and dereferencing that will generate a null 
+  pointer exception.
+----------------
+lines: 15-584 
+Dereference of the result of readLine() without nullcheck in 
+  promptForRecipeSearchMethodSelection() 
+Dereference of the result of readLine() without nullcheck 
+The result of invoking readLine() is dereferenced without checking to see 
+  if the result is null. If there are no more lines of text to read, 
+  readLine() will return null and dereferencing that will generate a null 
+  pointer exception.
+----------------
+lines: 15-584 
+Dereference of the result of readLine() without nullcheck in 
+  promptForRecipeSelection() 
+Dereference of the result of readLine() without nullcheck 
+The result of invoking readLine() is dereferenced without checking to see 
+  if the result is null. If there are no more lines of text to read, 
+  readLine() will return null and dereferencing that will generate a null 
+  pointer exception.
+----------------
+lines: 15-584 
+Dereference of the result of readLine() without nullcheck in 
+  promptForRecipetName() 
+Dereference of the result of readLine() without nullcheck 
+The result of invoking readLine() is dereferenced without checking to see 
+  if the result is null. If there are no more lines of text to read, 
+  readLine() will return null and dereferencing that will generate a null 
+  pointer exception.
+----------------
+lines: 15-584 
+Dereference of the result of readLine() without nullcheck in 
+  promptForStartSelection() 
+Dereference of the result of readLine() without nullcheck 
+The result of invoking readLine() is dereferenced without checking to see 
+  if the result is null. If there are no more lines of text to read, 
+  readLine() will return null and dereferencing that will generate a null 
+  pointer exception.
+----------------
+lines: 15-584 
+Unused field: ra 
+Unused field 
+   
+ 
+   This field is never used.&nbsp; Consider removing it from the class.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/FileHandler.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 11-156 
+Found reliance on default encoding in readIngredients(): new 
+  java.io.FileReader(File) 
+Reliance on default encoding 
+Found a call to a method which will perform a byte to String (or String to 
+  byte) conversion, and will assume that the default platform encoding is 
+  suitable. This will cause the application behaviour to vary between 
+  platforms. Use an alternative API and specify a charset name or Charset 
+  object explicitly.
+----------------
+lines: 11-156 
+Found reliance on default encoding in readRecipes(List): new 
+  java.io.FileReader(File) 
+Reliance on default encoding 
+Found a call to a method which will perform a byte to String (or String to 
+  byte) conversion, and will assume that the default platform encoding is 
+  suitable. This will cause the application behaviour to vary between 
+  platforms. Use an alternative API and specify a charset name or Charset 
+  object explicitly.
+----------------
+lines: 11-156 
+Found reliance on default encoding in writeIngredients(List): new 
+  java.io.PrintWriter(File) 
+Reliance on default encoding 
+Found a call to a method which will perform a byte to String (or String to 
+  byte) conversion, and will assume that the default platform encoding is 
+  suitable. This will cause the application behaviour to vary between 
+  platforms. Use an alternative API and specify a charset name or Charset 
+  object explicitly.
+----------------
+lines: 11-156 
+Found reliance on default encoding in writeRecipes(List): new 
+  java.io.PrintWriter(File) 
+Reliance on default encoding 
+Found a call to a method which will perform a byte to String (or String to 
+  byte) conversion, and will assume that the default platform encoding is 
+  suitable. This will cause the application behaviour to vary between 
+  platforms. Use an alternative API and specify a charset name or Charset 
+  object explicitly.
+----------------
+lines: 11-156 
+Exception is caught when Exception is not thrown in readRecipes(List) 
+Exception is caught when Exception is not thrown 
+This method uses a try-catch block that catches Exception objects, but 
+  Exception is not thrown within the try block, and RuntimeException is not 
+  explicitly caught. It is a common bug pattern to say try { ... } catch 
+  (Exception e) { something } as a shorthand for catching a number of types 
+  of exception each of whose catch blocks is identical, but this construct 
+  also accidentally catches RuntimeException as well, masking potential 
+  bugs. 
+ 
+A better approach is to either explicitly catch the specific exceptions 
+  that are thrown, or to explicitly catch RuntimeException exception, 
+  rethrow it, and then catch all non-Runtime Exceptions, as shown below: 
+ 
+try { 
+  ... 
+} catch (RuntimeException e) { 
+  throw e; 
+} catch (Exception e) { 
+  ... deal with all non-runtime exceptions ... 
+}
+----------------
+lines: 11-156 
+writeRecipes(List) concatenates strings using + in a loop 
+Method concatenates strings using + in a loop 
+The method seems to be building a String using concatenation in a loop. In 
+  each iteration, the String is converted to a StringBuffer/StringBuilder, 
+  appended to, and converted back to a String. This can lead to a cost 
+  quadratic in the number of iterations, as the growing string is recopied 
+  in each iteration. 
+ 
+Better performance can be obtained by using a StringBuffer (or 
+  StringBuilder in Java 1.5) explicitly. 
+ 
+For example: 
+ 
+// This is bad 
+String s = ""; 
+for (int i = 0; i < field.length; ++i) { 
+  s = s + field[i]; 
+} 
+ 
+// This is better 
+StringBuffer buf = new StringBuffer(); 
+for (int i = 0; i < field.length; ++i) { 
+  buf.append(field[i]); 
+} 
+String s = buf.toString();
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/Search.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="recipe/SearchByMaxPrice.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 6-24 
+Unread field: ui 
+Unread field 
+   
+ 
+   This field is never read.&nbsp; Consider removing it from the class.
+----------------
+lines: 6-24 
+Unused field: ingredientsInRecipe 
+Unused field 
+   
+ 
+   This field is never used.&nbsp; Consider removing it from the class.
+----------------
+lines: 6-24 
+Unused field: portion 
+Unused field 
+   
+ 
+   This field is never used.&nbsp; Consider removing it from the class.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/Option.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="recipe/Recipe.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="recipe/RecipeApplication.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 13-155 
+start() invokes System.exit(...), which shuts down the entire virtual 
+  machine 
+Method invokes System.exit(...) 
+Invoking System.exit shuts down the entire Java virtual machine. This 
+  should only been done when it is appropriate. Such calls make it hard or 
+  impossible for your code to be invoked by other code. Consider throwing a 
+  RuntimeException instead.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/SearchByRecipeName.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 6-18 
+Unused field: ingredientsInRecipe 
+Unused field 
+   
+ 
+   This field is never used.&nbsp; Consider removing it from the class.
+----------------
+lines: 6-18 
+Unused field: recipeName 
+Unused field 
+   
+ 
+   This field is never used.&nbsp; Consider removing it from the class.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/IngredientMenuBehaviours.java" classname="FindBugs Issues">
+</testcase></testsuite>

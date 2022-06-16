@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.1" sequence="0" timestamp="1616345360567" analysisTimestamp="1616345360576" release="1.0-SNAPSHOT">
+  <Project projectName="monopoly (spotbugsMain)">
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/ConsoleUi.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/IngredientInRecipe.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/IngredientMenuBehaviours.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/Recipe.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/RecipeMenuBehaviours.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/Option.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/SearchByIngredientName.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/RecipeApplication.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/Ingredient.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/SearchByRecipeName.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/SearchByMaxPrice.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/Main.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/FileHandler.class</Jar>
+    <Jar>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/build/classes/java/main/recipe/Search.class</Jar>
+    <AuxClasspathEntry>/Users/yuyaoduan/.gradle/caches/modules-2/files-2.1/org.json/json/20180813/8566b2b0391d9d4479ea225645c6ed47ef17fe41/json-20180813.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/yuyaoduan/.gradle/caches/modules-2/files-2.1/org.apache.directory.studio/org.apache.commons.io/2.4/b98d592c582262b3da8a871c7317f4902d98e996/org.apache.commons.io-2.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/yuyaoduan/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar</AuxClasspathEntry>
+    <SrcDir>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/resources</SrcDir>
+    <SrcDir>/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java</SrcDir>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="a65289929a078a1a255230c9184c58ed" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in recipe.ConsoleUi.promptForRecipePortionUnit(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="recipe.ConsoleUi" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="15" end="584" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>At ConsoleUi.java:[lines 15-584]</Message>
+      </SourceLine>
+      <Message>In class recipe.ConsoleUi</Message>
+    </Class>
+    <Method classname="recipe.ConsoleUi" name="promptForRecipePortionUnit" signature="()Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="110" end="121" startBytecode="0" endBytecode="207" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java"/>
+      <Message>In method recipe.ConsoleUi.promptForRecipePortionUnit()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="146" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="recipe.ConsoleUi" primary="true" start="110" end="110" startBytecode="11" endBytecode="11" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+      <Message>At ConsoleUi.java:[line 110]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" instanceHash="3d8498aeb57f024f3e952050990c09cc" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Dereference of the result of readLine() without nullcheck</ShortMessage>
+    <LongMessage>Dereference of the result of readLine() without nullcheck in recipe.ConsoleUi.promptForCreateIngredient(String)</LongMessage>
+    <Class classname="recipe.ConsoleUi" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="15" end="584" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>At ConsoleUi.java:[lines 15-584]</Message>
+      </SourceLine>
+      <Message>In class recipe.ConsoleUi</Message>
+    </Class>
+    <Method classname="recipe.ConsoleUi" name="promptForCreateIngredient" signature="(Ljava/lang/String;)Lrecipe/Ingredient;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="301" end="332" startBytecode="0" endBytecode="442" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java"/>
+      <Message>In method recipe.ConsoleUi.promptForCreateIngredient(String)</Message>
+    </Method>
+    <LocalVariable name="unit" register="2" pc="59" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from unit</Message>
+    </LocalVariable>
+    <SourceLine classname="recipe.ConsoleUi" primary="true" start="311" end="311" startBytecode="61" endBytecode="61" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+      <Message>At ConsoleUi.java:[line 311]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" instanceHash="45ae69937ba6913ce300563d21664522" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Dereference of the result of readLine() without nullcheck</ShortMessage>
+    <LongMessage>Dereference of the result of readLine() without nullcheck in recipe.ConsoleUi.promptForIngredientName()</LongMessage>
+    <Class classname="recipe.ConsoleUi" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="15" end="584" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>At ConsoleUi.java:[lines 15-584]</Message>
+      </SourceLine>
+      <Message>In class recipe.ConsoleUi</Message>
+    </Class>
+    <Method classname="recipe.ConsoleUi" name="promptForIngredientName" signature="()Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="24" end="36" startBytecode="0" endBytecode="211" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java"/>
+      <Message>In method recipe.ConsoleUi.promptForIngredientName()</Message>
+    </Method>
+    <LocalVariable name="name" register="1" pc="50" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from name</Message>
+    </LocalVariable>
+    <SourceLine classname="recipe.ConsoleUi" primary="true" start="32" end="32" startBytecode="52" endBytecode="52" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+      <Message>At ConsoleUi.java:[line 32]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" instanceHash="7e10efd8b773fc3a79469688bac37c14" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Dereference of the result of readLine() without nullcheck</ShortMessage>
+    <LongMessage>Dereference of the result of readLine() without nullcheck in recipe.ConsoleUi.promptForIngredientSelection()</LongMessage>
+    <Class classname="recipe.ConsoleUi" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="15" end="584" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>At ConsoleUi.java:[lines 15-584]</Message>
+      </SourceLine>
+      <Message>In class recipe.ConsoleUi</Message>
+    </Class>
+    <Method classname="recipe.ConsoleUi" name="promptForIngredientSelection" signature="()Lrecipe/Option;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="214" end="241" startBytecode="0" endBytecode="416" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java"/>
+      <Message>In method recipe.ConsoleUi.promptForIngredientSelection()</Message>
+    </Method>
+    <LocalVariable name="selection" register="1" pc="98" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from selection</Message>
+    </LocalVariable>
+    <SourceLine classname="recipe.ConsoleUi" primary="true" start="227" end="227" startBytecode="100" endBytecode="100" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+      <Message>At ConsoleUi.java:[line 227]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" instanceHash="5b4450d415c875fbee80caed3316e71a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Dereference of the result of readLine() without nullcheck</ShortMessage>
+    <LongMessage>Dereference of the result of readLine() without nullcheck in recipe.ConsoleUi.promptForPortionRequest()</LongMessage>
+    <Class classname="recipe.ConsoleUi" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="15" end="584" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>At ConsoleUi.java:[lines 15-584]</Message>
+      </SourceLine>
+      <Message>In class recipe.ConsoleUi</Message>
+    </Class>
+    <Method classname="recipe.ConsoleUi" name="promptForPortionRequest" signature="()I" isStatic="false" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="485" end="498" startBytecode="0" endBytecode="211" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java"/>
+      <Message>In method recipe.ConsoleUi.promptForPortionRequest()</Message>
+    </Method>
+    <LocalVariable name="portionStr" register="2" pc="50" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from portionStr</Message>
+    </LocalVariable>
+    <SourceLine classname="recipe.ConsoleUi" primary="true" start="493" end="493" startBytecode="51" endBytecode="51" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+      <Message>At ConsoleUi.java:[line 493]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" instanceHash="e64eca3301160d5df509f1e963d9296d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Dereference of the result of readLine() without nullcheck</ShortMessage>
+    <LongMessage>Dereference of the result of readLine() without nullcheck in recipe.ConsoleUi.promptForRecipePortionNum()</LongMessage>
+    <Class classname="recipe.ConsoleUi" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="15" end="584" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>At ConsoleUi.java:[lines 15-584]</Message>
+      </SourceLine>
+      <Message>In class recipe.ConsoleUi</Message>
+    </Class>
+    <Method classname="recipe.ConsoleUi" name="promptForRecipePortionNum" signature="()I" isStatic="false" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="94" end="103" startBytecode="0" endBytecode="201" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java"/>
+      <Message>In method recipe.ConsoleUi.promptForRecipePortionNum()</Message>
+    </Method>
+    <LocalVariable name="portionStr" register="1" pc="38" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from portionStr</Message>
+    </LocalVariable>
+    <SourceLine classname="recipe.ConsoleUi" primary="true" start="98" end="98" startBytecode="39" endBytecode="39" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+      <Message>At ConsoleUi.java:[line 98]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" instanceHash="8217c4e7080ad333e2c0dbbc96a7f54e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Dereference of the result of readLine() without nullcheck</ShortMessage>
+    <LongMessage>Dereference of the result of readLine() without nullcheck in recipe.ConsoleUi.promptForRecipePortionUnit()</LongMessage>
+    <Class classname="recipe.ConsoleUi" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="15" end="584" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>At ConsoleUi.java:[lines 15-584]</Message>
+      </SourceLine>
+      <Message>In class recipe.ConsoleUi</Message>
+    </Class>
+    <Method classname="recipe.ConsoleUi" name="promptForRecipePortionUnit" signature="()Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="110" end="121" startBytecode="0" endBytecode="207" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java"/>
+      <Message>In method recipe.ConsoleUi.promptForRecipePortionUnit()</Message>
+    </Method>
+    <LocalVariable name="portionUnit" register="1" pc="32" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from portionUnit</Message>
+    </LocalVariable>
+    <SourceLine classname="recipe.ConsoleUi" primary="true" start="113" end="113" startBytecode="34" endBytecode="34" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+      <Message>At ConsoleUi.java:[line 113]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" instanceHash="490a046861fa139bb01deebd00779efa" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Dereference of the result of readLine() without nullcheck</ShortMessage>
+    <LongMessage>Dereference of the result of readLine() without nullcheck in recipe.ConsoleUi.promptForRecipeSearchMethodSelection()</LongMessage>
+    <Class classname="recipe.ConsoleUi" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="15" end="584" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>At ConsoleUi.java:[lines 15-584]</Message>
+      </SourceLine>
+      <Message>In class recipe.ConsoleUi</Message>
+    </Class>
+    <Method classname="recipe.ConsoleUi" name="promptForRecipeSearchMethodSelection" signature="()Lrecipe/Option;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="506" end="528" startBytecode="0" endBytecode="362" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java"/>
+      <Message>In method recipe.ConsoleUi.promptForRecipeSearchMethodSelection()</Message>
+    </Method>
+    <LocalVariable name="selection" register="1" pc="82" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from selection</Message>
+    </LocalVariable>
+    <SourceLine classname="recipe.ConsoleUi" primary="true" start="516" end="516" startBytecode="84" endBytecode="84" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+      <Message>At ConsoleUi.java:[line 516]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" instanceHash="2b25b14e851073450a31752d20862b4b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Dereference of the result of readLine() without nullcheck</ShortMessage>
+    <LongMessage>Dereference of the result of readLine() without nullcheck in recipe.ConsoleUi.promptForRecipeSelection()</LongMessage>
+    <Class classname="recipe.ConsoleUi" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="15" end="584" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>At ConsoleUi.java:[lines 15-584]</Message>
+      </SourceLine>
+      <Message>In class recipe.ConsoleUi</Message>
+    </Class>
+    <Method classname="recipe.ConsoleUi" name="promptForRecipeSelection" signature="()Lrecipe/Option;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="177" end="207" startBytecode="0" endBytecode="458" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java"/>
+      <Message>In method recipe.ConsoleUi.promptForRecipeSelection()</Message>
+    </Method>
+    <LocalVariable name="selection" register="1" pc="106" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from selection</Message>
+    </LocalVariable>
+    <SourceLine classname="recipe.ConsoleUi" primary="true" start="191" end="191" startBytecode="108" endBytecode="108" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+      <Message>At ConsoleUi.java:[line 191]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" instanceHash="f580b2c5a38ec1bbc9c648c726b0ec0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Dereference of the result of readLine() without nullcheck</ShortMessage>
+    <LongMessage>Dereference of the result of readLine() without nullcheck in recipe.ConsoleUi.promptForRecipetName()</LongMessage>
+    <Class classname="recipe.ConsoleUi" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="15" end="584" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>At ConsoleUi.java:[lines 15-584]</Message>
+      </SourceLine>
+      <Message>In class recipe.ConsoleUi</Message>
+    </Class>
+    <Method classname="recipe.ConsoleUi" name="promptForRecipetName" signature="()Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="44" end="56" startBytecode="0" endBytecode="211" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java"/>
+      <Message>In method recipe.ConsoleUi.promptForRecipetName()</Message>
+    </Method>
+    <LocalVariable name="name" register="1" pc="50" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from name</Message>
+    </LocalVariable>
+    <SourceLine classname="recipe.ConsoleUi" primary="true" start="52" end="52" startBytecode="52" endBytecode="52" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+      <Message>At ConsoleUi.java:[line 52]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" instanceHash="55f797eef87779b631355abbd25b1ae1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Dereference of the result of readLine() without nullcheck</ShortMessage>
+    <LongMessage>Dereference of the result of readLine() without nullcheck in recipe.ConsoleUi.promptForStartSelection()</LongMessage>
+    <Class classname="recipe.ConsoleUi" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="15" end="584" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>At ConsoleUi.java:[lines 15-584]</Message>
+      </SourceLine>
+      <Message>In class recipe.ConsoleUi</Message>
+    </Class>
+    <Method classname="recipe.ConsoleUi" name="promptForStartSelection" signature="()Lrecipe/Option;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="248" end="271" startBytecode="0" endBytecode="354" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java"/>
+      <Message>In method recipe.ConsoleUi.promptForStartSelection()</Message>
+    </Method>
+    <LocalVariable name="selection" register="1" pc="96" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from selection</Message>
+    </LocalVariable>
+    <SourceLine classname="recipe.ConsoleUi" primary="true" start="261" end="261" startBytecode="98" endBytecode="98" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+      <Message>At ConsoleUi.java:[line 261]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="69858568e0e1bcb2feb0aeff88e53dae" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: recipe.ConsoleUi.ra</LongMessage>
+    <Class classname="recipe.ConsoleUi" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" start="15" end="584" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>At ConsoleUi.java:[lines 15-584]</Message>
+      </SourceLine>
+      <Message>In class recipe.ConsoleUi</Message>
+    </Class>
+    <Field classname="recipe.ConsoleUi" name="ra" signature="Lrecipe/RecipeApplication;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.ConsoleUi" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java">
+        <Message>In ConsoleUi.java</Message>
+      </SourceLine>
+      <Message>Field recipe.ConsoleUi.ra</Message>
+    </Field>
+    <SourceLine classname="recipe.ConsoleUi" sourcefile="ConsoleUi.java" sourcepath="recipe/ConsoleUi.java" relSourcepath="java/recipe/ConsoleUi.java" synthetic="true">
+      <Message>In ConsoleUi.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="fda72e8ad6c9992a8e69efb7a7e8224e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in recipe.FileHandler.readIngredients(): new java.io.FileReader(File)</LongMessage>
+    <Class classname="recipe.FileHandler" primary="true">
+      <SourceLine classname="recipe.FileHandler" start="11" end="156" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java">
+        <Message>At FileHandler.java:[lines 11-156]</Message>
+      </SourceLine>
+      <Message>In class recipe.FileHandler</Message>
+    </Class>
+    <Method classname="recipe.FileHandler" name="readIngredients" signature="()Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.FileHandler" start="34" end="60" startBytecode="0" endBytecode="563" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java"/>
+      <Message>In method recipe.FileHandler.readIngredients()</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="75" end="76" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>Called method new java.io.FileReader(File)</Message>
+    </Method>
+    <SourceLine classname="recipe.FileHandler" primary="true" start="37" end="37" startBytecode="23" endBytecode="23" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java">
+      <Message>At FileHandler.java:[line 37]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="23e3feb9eaff4b8decee73fd9ae789e7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in recipe.FileHandler.readRecipes(List): new java.io.FileReader(File)</LongMessage>
+    <Class classname="recipe.FileHandler" primary="true">
+      <SourceLine classname="recipe.FileHandler" start="11" end="156" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java">
+        <Message>At FileHandler.java:[lines 11-156]</Message>
+      </SourceLine>
+      <Message>In class recipe.FileHandler</Message>
+    </Class>
+    <Method classname="recipe.FileHandler" name="readRecipes" signature="(Ljava/util/List;)Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.FileHandler" start="105" end="156" startBytecode="0" endBytecode="1120" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java"/>
+      <Message>In method recipe.FileHandler.readRecipes(List)</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="75" end="76" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>Called method new java.io.FileReader(File)</Message>
+    </Method>
+    <SourceLine classname="recipe.FileHandler" primary="true" start="108" end="108" startBytecode="23" endBytecode="23" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java">
+      <Message>At FileHandler.java:[line 108]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="5925e5526da4e9f958fd3cfddd0d06a8" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in recipe.FileHandler.writeIngredients(List): new java.io.PrintWriter(File)</LongMessage>
+    <Class classname="recipe.FileHandler" primary="true">
+      <SourceLine classname="recipe.FileHandler" start="11" end="156" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java">
+        <Message>At FileHandler.java:[lines 11-156]</Message>
+      </SourceLine>
+      <Message>In class recipe.FileHandler</Message>
+    </Class>
+    <Method classname="recipe.FileHandler" name="writeIngredients" signature="(Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="recipe.FileHandler" start="16" end="30" startBytecode="0" endBytecode="396" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java"/>
+      <Message>In method recipe.FileHandler.writeIngredients(List)</Message>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter" start="309" end="311" startBytecode="0" endBytecode="83" sourcefile="PrintWriter.java" sourcepath="java/io/PrintWriter.java"/>
+      <Message>Called method new java.io.PrintWriter(File)</Message>
+    </Method>
+    <SourceLine classname="recipe.FileHandler" primary="true" start="17" end="17" startBytecode="15" endBytecode="15" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java">
+      <Message>At FileHandler.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="468af4efd79b86094e3c0be9b384c84a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in recipe.FileHandler.writeRecipes(List): new java.io.PrintWriter(File)</LongMessage>
+    <Class classname="recipe.FileHandler" primary="true">
+      <SourceLine classname="recipe.FileHandler" start="11" end="156" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java">
+        <Message>At FileHandler.java:[lines 11-156]</Message>
+      </SourceLine>
+      <Message>In class recipe.FileHandler</Message>
+    </Class>
+    <Method classname="recipe.FileHandler" name="writeRecipes" signature="(Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="recipe.FileHandler" start="66" end="101" startBytecode="0" endBytecode="978" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java"/>
+      <Message>In method recipe.FileHandler.writeRecipes(List)</Message>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter" start="309" end="311" startBytecode="0" endBytecode="83" sourcefile="PrintWriter.java" sourcepath="java/io/PrintWriter.java"/>
+      <Message>Called method new java.io.PrintWriter(File)</Message>
+    </Method>
+    <SourceLine classname="recipe.FileHandler" primary="true" start="67" end="67" startBytecode="15" endBytecode="15" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java">
+      <Message>At FileHandler.java:[line 67]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" instanceHash="705a4f3f9842d12c92a181ca687d739f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="396">
+    <ShortMessage>Exception is caught when Exception is not thrown</ShortMessage>
+    <LongMessage>Exception is caught when Exception is not thrown in recipe.FileHandler.readRecipes(List)</LongMessage>
+    <Class classname="recipe.FileHandler" primary="true">
+      <SourceLine classname="recipe.FileHandler" start="11" end="156" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java">
+        <Message>At FileHandler.java:[lines 11-156]</Message>
+      </SourceLine>
+      <Message>In class recipe.FileHandler</Message>
+    </Class>
+    <Method classname="recipe.FileHandler" name="readRecipes" signature="(Ljava/util/List;)Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.FileHandler" start="105" end="156" startBytecode="0" endBytecode="1120" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java"/>
+      <Message>In method recipe.FileHandler.readRecipes(List)</Message>
+    </Method>
+    <SourceLine classname="recipe.FileHandler" primary="true" start="153" end="153" startBytecode="398" endBytecode="398" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java">
+      <Message>At FileHandler.java:[line 153]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="c2abb15a9319e30141fabac24a4e7786" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method concatenates strings using + in a loop</ShortMessage>
+    <LongMessage>recipe.FileHandler.writeRecipes(List) concatenates strings using + in a loop</LongMessage>
+    <Class classname="recipe.FileHandler" primary="true">
+      <SourceLine classname="recipe.FileHandler" start="11" end="156" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java">
+        <Message>At FileHandler.java:[lines 11-156]</Message>
+      </SourceLine>
+      <Message>In class recipe.FileHandler</Message>
+    </Class>
+    <Method classname="recipe.FileHandler" name="writeRecipes" signature="(Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="recipe.FileHandler" start="66" end="101" startBytecode="0" endBytecode="978" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java"/>
+      <Message>In method recipe.FileHandler.writeRecipes(List)</Message>
+    </Method>
+    <SourceLine classname="recipe.FileHandler" primary="true" start="79" end="79" startBytecode="149" endBytecode="149" sourcefile="FileHandler.java" sourcepath="recipe/FileHandler.java" relSourcepath="java/recipe/FileHandler.java">
+      <Message>At FileHandler.java:[line 79]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" instanceHash="36ad0b0b9bc8446987dbfa408f397fb8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="382">
+    <ShortMessage>Method invokes System.exit(...)</ShortMessage>
+    <LongMessage>recipe.RecipeApplication.start() invokes System.exit(...), which shuts down the entire virtual machine</LongMessage>
+    <Class classname="recipe.RecipeApplication" primary="true">
+      <SourceLine classname="recipe.RecipeApplication" start="13" end="155" sourcefile="RecipeApplication.java" sourcepath="recipe/RecipeApplication.java" relSourcepath="java/recipe/RecipeApplication.java">
+        <Message>At RecipeApplication.java:[lines 13-155]</Message>
+      </SourceLine>
+      <Message>In class recipe.RecipeApplication</Message>
+    </Class>
+    <Method classname="recipe.RecipeApplication" name="start" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="recipe.RecipeApplication" start="136" end="155" startBytecode="0" endBytecode="207" sourcefile="RecipeApplication.java" sourcepath="recipe/RecipeApplication.java" relSourcepath="java/recipe/RecipeApplication.java"/>
+      <Message>In method recipe.RecipeApplication.start()</Message>
+    </Method>
+    <SourceLine classname="recipe.RecipeApplication" primary="true" start="149" end="149" startBytecode="73" endBytecode="73" sourcefile="RecipeApplication.java" sourcepath="recipe/RecipeApplication.java" relSourcepath="java/recipe/RecipeApplication.java">
+      <Message>At RecipeApplication.java:[line 149]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="6112fca020ef3f3bdf6704b002290c01" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field</ShortMessage>
+    <LongMessage>Unread field: recipe.SearchByMaxPrice.ui</LongMessage>
+    <Class classname="recipe.SearchByMaxPrice" primary="true">
+      <SourceLine classname="recipe.SearchByMaxPrice" start="6" end="24" sourcefile="SearchByMaxPrice.java" sourcepath="recipe/SearchByMaxPrice.java" relSourcepath="java/recipe/SearchByMaxPrice.java">
+        <Message>At SearchByMaxPrice.java:[lines 6-24]</Message>
+      </SourceLine>
+      <Message>In class recipe.SearchByMaxPrice</Message>
+    </Class>
+    <Field classname="recipe.SearchByMaxPrice" name="ui" signature="Lrecipe/ConsoleUi;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.SearchByMaxPrice" sourcefile="SearchByMaxPrice.java" sourcepath="recipe/SearchByMaxPrice.java" relSourcepath="java/recipe/SearchByMaxPrice.java">
+        <Message>In SearchByMaxPrice.java</Message>
+      </SourceLine>
+      <Message>Field recipe.SearchByMaxPrice.ui</Message>
+    </Field>
+    <SourceLine classname="recipe.SearchByMaxPrice" primary="true" start="13" end="13" startBytecode="34" endBytecode="34" sourcefile="SearchByMaxPrice.java" sourcepath="recipe/SearchByMaxPrice.java" relSourcepath="java/recipe/SearchByMaxPrice.java">
+      <Message>At SearchByMaxPrice.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="6f123a0c5486d4274b8cc9ce00ecaa8e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: recipe.SearchByMaxPrice.ingredientsInRecipe</LongMessage>
+    <Class classname="recipe.SearchByMaxPrice" primary="true">
+      <SourceLine classname="recipe.SearchByMaxPrice" start="6" end="24" sourcefile="SearchByMaxPrice.java" sourcepath="recipe/SearchByMaxPrice.java" relSourcepath="java/recipe/SearchByMaxPrice.java">
+        <Message>At SearchByMaxPrice.java:[lines 6-24]</Message>
+      </SourceLine>
+      <Message>In class recipe.SearchByMaxPrice</Message>
+    </Class>
+    <Field classname="recipe.SearchByMaxPrice" name="ingredientsInRecipe" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.SearchByMaxPrice" sourcefile="SearchByMaxPrice.java" sourcepath="recipe/SearchByMaxPrice.java" relSourcepath="java/recipe/SearchByMaxPrice.java">
+        <Message>In SearchByMaxPrice.java</Message>
+      </SourceLine>
+      <Message>Field recipe.SearchByMaxPrice.ingredientsInRecipe</Message>
+    </Field>
+    <SourceLine classname="recipe.SearchByMaxPrice" sourcefile="SearchByMaxPrice.java" sourcepath="recipe/SearchByMaxPrice.java" relSourcepath="java/recipe/SearchByMaxPrice.java" synthetic="true">
+      <Message>In SearchByMaxPrice.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="8710dd684d7c62ea8349a54f1c44d282" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: recipe.SearchByMaxPrice.portion</LongMessage>
+    <Class classname="recipe.SearchByMaxPrice" primary="true">
+      <SourceLine classname="recipe.SearchByMaxPrice" start="6" end="24" sourcefile="SearchByMaxPrice.java" sourcepath="recipe/SearchByMaxPrice.java" relSourcepath="java/recipe/SearchByMaxPrice.java">
+        <Message>At SearchByMaxPrice.java:[lines 6-24]</Message>
+      </SourceLine>
+      <Message>In class recipe.SearchByMaxPrice</Message>
+    </Class>
+    <Field classname="recipe.SearchByMaxPrice" name="portion" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="recipe.SearchByMaxPrice" sourcefile="SearchByMaxPrice.java" sourcepath="recipe/SearchByMaxPrice.java" relSourcepath="java/recipe/SearchByMaxPrice.java">
+        <Message>In SearchByMaxPrice.java</Message>
+      </SourceLine>
+      <Message>Field recipe.SearchByMaxPrice.portion</Message>
+    </Field>
+    <SourceLine classname="recipe.SearchByMaxPrice" sourcefile="SearchByMaxPrice.java" sourcepath="recipe/SearchByMaxPrice.java" relSourcepath="java/recipe/SearchByMaxPrice.java" synthetic="true">
+      <Message>In SearchByMaxPrice.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="bb92795cf2878ab45588d896688c4de1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: recipe.SearchByRecipeName.ingredientsInRecipe</LongMessage>
+    <Class classname="recipe.SearchByRecipeName" primary="true">
+      <SourceLine classname="recipe.SearchByRecipeName" start="6" end="18" sourcefile="SearchByRecipeName.java" sourcepath="recipe/SearchByRecipeName.java" relSourcepath="java/recipe/SearchByRecipeName.java">
+        <Message>At SearchByRecipeName.java:[lines 6-18]</Message>
+      </SourceLine>
+      <Message>In class recipe.SearchByRecipeName</Message>
+    </Class>
+    <Field classname="recipe.SearchByRecipeName" name="ingredientsInRecipe" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.SearchByRecipeName" sourcefile="SearchByRecipeName.java" sourcepath="recipe/SearchByRecipeName.java" relSourcepath="java/recipe/SearchByRecipeName.java">
+        <Message>In SearchByRecipeName.java</Message>
+      </SourceLine>
+      <Message>Field recipe.SearchByRecipeName.ingredientsInRecipe</Message>
+    </Field>
+    <SourceLine classname="recipe.SearchByRecipeName" sourcefile="SearchByRecipeName.java" sourcepath="recipe/SearchByRecipeName.java" relSourcepath="java/recipe/SearchByRecipeName.java" synthetic="true">
+      <Message>In SearchByRecipeName.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="9f82f5e8ddafc30af0b9f446a5da8266" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: recipe.SearchByRecipeName.recipeName</LongMessage>
+    <Class classname="recipe.SearchByRecipeName" primary="true">
+      <SourceLine classname="recipe.SearchByRecipeName" start="6" end="18" sourcefile="SearchByRecipeName.java" sourcepath="recipe/SearchByRecipeName.java" relSourcepath="java/recipe/SearchByRecipeName.java">
+        <Message>At SearchByRecipeName.java:[lines 6-18]</Message>
+      </SourceLine>
+      <Message>In class recipe.SearchByRecipeName</Message>
+    </Class>
+    <Field classname="recipe.SearchByRecipeName" name="recipeName" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="recipe.SearchByRecipeName" sourcefile="SearchByRecipeName.java" sourcepath="recipe/SearchByRecipeName.java" relSourcepath="java/recipe/SearchByRecipeName.java">
+        <Message>In SearchByRecipeName.java</Message>
+      </SourceLine>
+      <Message>Field recipe.SearchByRecipeName.recipeName</Message>
+    </Field>
+    <SourceLine classname="recipe.SearchByRecipeName" sourcefile="SearchByRecipeName.java" sourcepath="recipe/SearchByRecipeName.java" relSourcepath="java/recipe/SearchByRecipeName.java" synthetic="true">
+      <Message>In SearchByRecipeName.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="NP_DEREFERENCE_OF_READLINE_VALUE" abbrev="NP" category="STYLE">
+    <ShortDescription>Dereference of the result of readLine() without nullcheck</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The result of invoking readLine() is dereferenced without checking to see if the result is null. If there are no more lines of text
+to read, readLine() will return null and dereferencing that will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="UUF_UNUSED_FIELD" abbrev="UuF" category="PERFORMANCE">
+    <ShortDescription>Unused field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never used.&nbsp; Consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SBSC_USE_STRINGBUFFER_CONCATENATION" abbrev="SBSC" category="PERFORMANCE">
+    <ShortDescription>Method concatenates strings using + in a loop</ShortDescription>
+    <Details><![CDATA[
+
+<p> The method seems to be building a String using concatenation in a loop.
+In each iteration, the String is converted to a StringBuffer/StringBuilder,
+   appended to, and converted back to a String.
+   This can lead to a cost quadratic in the number of iterations,
+   as the growing string is recopied in each iteration. </p>
+
+<p>Better performance can be obtained by using
+a StringBuffer (or StringBuilder in Java 1.5) explicitly.</p>
+
+<p> For example:</p>
+<pre><code>// This is bad
+String s = "";
+for (int i = 0; i &lt; field.length; ++i) {
+    s = s + field[i];
+}
+
+// This is better
+StringBuffer buf = new StringBuffer();
+for (int i = 0; i &lt; field.length; ++i) {
+    buf.append(field[i]);
+}
+String s = buf.toString();
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Unread field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="REC_CATCH_EXCEPTION" abbrev="REC" category="STYLE" cweid="396">
+    <ShortDescription>Exception is caught when Exception is not thrown</ShortDescription>
+    <Details><![CDATA[
+  
+  <p>
+  This method uses a try-catch block that catches Exception objects, but Exception is not
+  thrown within the try block, and RuntimeException is not explicitly caught.  It is a common bug pattern to
+  say try { ... } catch (Exception e) { something } as a shorthand for catching a number of types of exception
+  each of whose catch blocks is identical, but this construct also accidentally catches RuntimeException as well,
+  masking potential bugs.
+  </p>
+  <p>A better approach is to either explicitly catch the specific exceptions that are thrown,
+  or to explicitly catch RuntimeException exception, rethrow it, and then catch all non-Runtime Exceptions, as shown below:</p>
+<pre><code>try {
+    ...
+} catch (RuntimeException e) {
+    throw e;
+} catch (Exception e) {
+    ... deal with all non-runtime exceptions ...
+}
+</code></pre>
+  
+     ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_EXIT" abbrev="Dm" category="BAD_PRACTICE" cweid="382">
+    <ShortDescription>Method invokes System.exit(...)</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Invoking System.exit shuts down the entire Java virtual machine. This
+   should only been done when it is appropriate. Such calls make it
+   hard or impossible for your code to be invoked by other code.
+   Consider throwing a RuntimeException instead.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="REC">
+    <Description>RuntimeException capture</Description>
+  </BugCode>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="UuF">
+    <Description>Unused field</Description>
+  </BugCode>
+  <BugCode abbrev="UrF">
+    <Description>Unread field</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="SBSC">
+    <Description>String concatenation in loop using + operator</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 21 Mar 2021 17:49:20 +0100" total_classes="14" referenced_classes="57" total_bugs="24" total_size="971" num_packages="1" java_version="11.0.9.1" vm_version="11.0.9.1+1" cpu_seconds="5.32" clock_seconds="6.39" peak_mbytes="210.29" alloc_mbytes="512.00" gc_seconds="0.18" priority_2="19" priority_1="5">
+    <FileStats path="recipe/ConsoleUi.java" bugCount="12" size="400" bugHash="53e9019769d8ae18620927bc7d203fa0"/>
+    <FileStats path="recipe/FileHandler.java" bugCount="6" size="113" bugHash="ffaeea95ec96ef746fab02ac539b5840"/>
+    <FileStats path="recipe/Ingredient.java" bugCount="0" size="27"/>
+    <FileStats path="recipe/IngredientInRecipe.java" bugCount="0" size="21"/>
+    <FileStats path="recipe/IngredientMenuBehaviours.java" bugCount="0" size="44"/>
+    <FileStats path="recipe/Main.java" bugCount="0" size="7"/>
+    <FileStats path="recipe/Option.java" bugCount="0" size="28"/>
+    <FileStats path="recipe/Recipe.java" bugCount="0" size="45"/>
+    <FileStats path="recipe/RecipeApplication.java" bugCount="1" size="90" bugHash="bb8c5feb6af170ef7f7425250f689f82"/>
+    <FileStats path="recipe/RecipeMenuBehaviours.java" bugCount="0" size="145"/>
+    <FileStats path="recipe/Search.java" bugCount="0" size="2"/>
+    <FileStats path="recipe/SearchByIngredientName.java" bugCount="0" size="15"/>
+    <FileStats path="recipe/SearchByMaxPrice.java" bugCount="3" size="21" bugHash="0a4f95363050d31ba6e1a760b2551218"/>
+    <FileStats path="recipe/SearchByRecipeName.java" bugCount="2" size="13" bugHash="415b348d9001ded1f095020c2d059e43"/>
+    <PackageStats package="recipe" total_bugs="24" total_types="14" total_size="971" priority_2="19" priority_1="5">
+      <ClassStats class="recipe.ConsoleUi" sourceFile="ConsoleUi.java" interface="false" size="400" bugs="12" priority_2="11" priority_1="1"/>
+      <ClassStats class="recipe.FileHandler" sourceFile="FileHandler.java" interface="false" size="113" bugs="6" priority_2="2" priority_1="4"/>
+      <ClassStats class="recipe.Ingredient" sourceFile="Ingredient.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="recipe.IngredientInRecipe" sourceFile="IngredientInRecipe.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="recipe.IngredientMenuBehaviours" sourceFile="IngredientMenuBehaviours.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="recipe.Main" sourceFile="Main.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="recipe.Option" sourceFile="Option.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="recipe.Recipe" sourceFile="Recipe.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="recipe.RecipeApplication" sourceFile="RecipeApplication.java" interface="false" size="90" bugs="1" priority_2="1"/>
+      <ClassStats class="recipe.RecipeMenuBehaviours" sourceFile="RecipeMenuBehaviours.java" interface="false" size="145" bugs="0"/>
+      <ClassStats class="recipe.Search" sourceFile="Search.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="recipe.SearchByIngredientName" sourceFile="SearchByIngredientName.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="recipe.SearchByMaxPrice" sourceFile="SearchByMaxPrice.java" interface="false" size="21" bugs="3" priority_2="3"/>
+      <ClassStats class="recipe.SearchByRecipeName" sourceFile="SearchByRecipeName.java" interface="false" size="13" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1105" invocations="554" avgMicrosecondsPerInvocation="1996" maxMicrosecondsPerInvocation="83974" standardDeviationMicrosecondsPerInvocation="8307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="379" invocations="57" avgMicrosecondsPerInvocation="6661" maxMicrosecondsPerInvocation="44087" standardDeviationMicrosecondsPerInvocation="12006"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="301" invocations="280" avgMicrosecondsPerInvocation="1075" maxMicrosecondsPerInvocation="55051" standardDeviationMicrosecondsPerInvocation="4893"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="257" invocations="123" avgMicrosecondsPerInvocation="2096" maxMicrosecondsPerInvocation="52035" standardDeviationMicrosecondsPerInvocation="6627"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="243" invocations="123" avgMicrosecondsPerInvocation="1975" maxMicrosecondsPerInvocation="32451" standardDeviationMicrosecondsPerInvocation="5083"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="241" invocations="105" avgMicrosecondsPerInvocation="2298" maxMicrosecondsPerInvocation="38926" standardDeviationMicrosecondsPerInvocation="6047"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="237" invocations="105" avgMicrosecondsPerInvocation="2258" maxMicrosecondsPerInvocation="50303" standardDeviationMicrosecondsPerInvocation="6597"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="232" invocations="57" avgMicrosecondsPerInvocation="4078" maxMicrosecondsPerInvocation="38437" standardDeviationMicrosecondsPerInvocation="7717"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="227" invocations="105" avgMicrosecondsPerInvocation="2166" maxMicrosecondsPerInvocation="38814" standardDeviationMicrosecondsPerInvocation="5402"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="129" invocations="185" avgMicrosecondsPerInvocation="699" maxMicrosecondsPerInvocation="15818" standardDeviationMicrosecondsPerInvocation="1530"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="128" invocations="105" avgMicrosecondsPerInvocation="1223" maxMicrosecondsPerInvocation="29150" standardDeviationMicrosecondsPerInvocation="3856"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="112" invocations="83" avgMicrosecondsPerInvocation="1359" maxMicrosecondsPerInvocation="16090" standardDeviationMicrosecondsPerInvocation="2895"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="109" invocations="558" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="43556" standardDeviationMicrosecondsPerInvocation="1909"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="95" invocations="57" avgMicrosecondsPerInvocation="1671" maxMicrosecondsPerInvocation="24217" standardDeviationMicrosecondsPerInvocation="4727"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UsagesRequiringNonNullValuesFactory" totalMilliseconds="94" invocations="10" avgMicrosecondsPerInvocation="9472" maxMicrosecondsPerInvocation="78174" standardDeviationMicrosecondsPerInvocation="22989"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="87" invocations="57" avgMicrosecondsPerInvocation="1533" maxMicrosecondsPerInvocation="46090" standardDeviationMicrosecondsPerInvocation="6289"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="87" invocations="57" avgMicrosecondsPerInvocation="1532" maxMicrosecondsPerInvocation="38399" standardDeviationMicrosecondsPerInvocation="6025"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="81" invocations="57" avgMicrosecondsPerInvocation="1435" maxMicrosecondsPerInvocation="20761" standardDeviationMicrosecondsPerInvocation="3524"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="80" invocations="518" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="8594" standardDeviationMicrosecondsPerInvocation="572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="67" invocations="57" avgMicrosecondsPerInvocation="1177" maxMicrosecondsPerInvocation="26586" standardDeviationMicrosecondsPerInvocation="4290"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="63" invocations="57" avgMicrosecondsPerInvocation="1116" maxMicrosecondsPerInvocation="44785" standardDeviationMicrosecondsPerInvocation="5906"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

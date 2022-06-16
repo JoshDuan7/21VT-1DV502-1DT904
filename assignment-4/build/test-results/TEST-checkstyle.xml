@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite package="org.checkstyle" time="0" tests="14" errors="37" name="checkstyle">
+<testcase time="0" name="recipe/ConsoleUi.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 400 column: column:7 
+变量'ingredientsInRecipe'声明及第一次使用距离7行（最多：3 
+  行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。
+----------------
+line: 401 column: column:7 
+变量'comments'声明及第一次使用距离10行（最多：3 
+  行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。
+----------------
+line: 428 column: column:5 
+变量'recipeMenuBehaviours'声明及第一次使用距离13行（最多：3 
+  行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。
+----------------
+line: 433 column: column:5 
+变量'ingredientsInRecipe'声明及第一次使用距离7行（最多：3 
+  行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。
+----------------
+line: 434 column: column:5 
+变量'comments'声明及第一次使用距离10行（最多：3 
+  行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。
+----------------
+line: 580 column: column:3 
+缺少 Javadoc 。
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/FileHandler.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 11 column: column:1 
+缺少 Javadoc 。
+----------------
+line: 69 column: column:9 
+变量'recipeName'声明及第一次使用距离5行（最多：3 
+  行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。
+----------------
+line: 70 column: column:9 
+变量'recipePortion'声明及第一次使用距离5行（最多：3 
+  行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。
+----------------
+line: 71 column: column:9 
+变量'recipePortionUnit'声明及第一次使用距离5行（最多：3 
+  行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/Ingredient.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="recipe/IngredientInRecipe.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="recipe/IngredientMenuBehaviours.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 5 column: column:1 
+缺少 Javadoc 。
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/Main.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 3 column: 
+Javadoc的第一句缺少一个结束时期。
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/Option.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="recipe/Recipe.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 18 column: column:3 
+缺少 Javadoc 。
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/RecipeApplication.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 5 column: column:1 
+缺少 Javadoc 。
+----------------
+line: 27 column: column:7 
+注释应与第28行代码同样缩进4个缩进符，而不是6个。
+----------------
+line: 65 column: column:7 
+注释应与第66行代码同样缩进4个缩进符，而不是6个。
+----------------
+line: 107 column: column:7 
+注释应与第108行代码同样缩进4个缩进符，而不是6个。
+----------------
+line: 126 column: column:8 
+注释应与第124, 127行代码同样缩进6, 4个缩进符，而不是7个。
+----------------
+line: 138 column: column:7 
+注释应与第139行代码同样缩进4个缩进符，而不是6个。
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/RecipeMenuBehaviours.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 7 column: column:1 
+缺少 Javadoc 。
+----------------
+line: 137 column: 
+Javadoc的第一句缺少一个结束时期。
+----------------
+line: 142 column: column:3 
+缺少 Javadoc 。
+----------------
+line: 166 column: 
+Javadoc的第一句缺少一个结束时期。
+----------------
+line: 189 column: 
+Javadoc的第一句缺少一个结束时期。
+----------------
+line: 201 column: 
+Javadoc的第一句缺少一个结束时期。
+----------------
+line: 212 column: 
+Javadoc的第一句缺少一个结束时期。
+----------------
+line: 220 column: column:5 
+'if' 后应有空格。
+----------------
+line: 220 column: column:5 
+WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only 
+  be represented as {} when not part of a multi-block statement (4.1.3)
+----------------
+line: 227 column: 
+Javadoc的第一句缺少一个结束时期。
+----------------
+line: 235 column: column:5 
+'if' 后应有空格。
+----------------
+line: 235 column: column:5 
+WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only 
+  be represented as {} when not part of a multi-block statement (4.1.3)
+----------------
+line: 242 column: 
+Javadoc的第一句缺少一个结束时期。
+----------------
+line: 250 column: column:5 
+'if' 后应有空格。
+----------------
+line: 250 column: column:5 
+WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only 
+  be represented as {} when not part of a multi-block statement (4.1.3)
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/Search.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="recipe/SearchByIngredientName.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 6 column: column:1 
+缺少 Javadoc 。
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/SearchByMaxPrice.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 6 column: column:1 
+缺少 Javadoc 。
+----------------
+]]></failure>
+</testcase><testcase time="0" name="recipe/SearchByRecipeName.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 6 column: column:1 
+缺少 Javadoc 。
+----------------
+]]></failure>
+</testcase></testsuite>

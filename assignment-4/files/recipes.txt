@@ -1,0 +1,10 @@
+Gingerbread biscuit;100,pieces;1.0,litre,flour-2.0,dl,cream-1.0,spoon,cinnamon;*Mix everything,*Wait one day,*Make figures
+Egg pie;2,portion;5.0,litre,flour-5.0,piece,egg-7.0,dl,cream;*Whisk the eggs,*Mix everything,*Bake in oven
+Mushroom pizza;1,portion;2.0,litre,flour-0.5,kg,mushroom-7.0,dl,cream;*Mix all flour and egg,*Mix everything and bake for 15 minutes,*Slice all mushroom and put them on the pizza,*Bake again for 5 minutes
+Chicken burger;1,portion;0.5,litre,flour-0.2,kg,chicken-0.05,kg,onion-0.1,litre,oil;*Mix all flour and bake as bread,*Frying the chicken,*Slice the onion and put it on the bread
+Banana egg milk;2,portion;0.5,litre,milk-1.0,piece,egg-2.0,piece,banana;*Mix all in the cup,*Boil in the pot for 15 minutes,*Waiting until cool down
+Lemon fish;2,portion;0.35,kg,lax-4.0,piece,lemon-3.0,piece,egg;*Squeeze lemon,*Pour lemon juice on fish,*Put all the eggs on the fish,*Steam for 25 minutes
+Italian pasta;3,bowl;0.2,kg,pasta-2.0,piece,tomato-4.0,piece,egg-0.3,kg,beef;*Smash tomato to sauce,*Mix tomato sauce with all eggs,*Boil the sauce and mix with sliced beef,*Boil the pasta,*Mix the pasta with the sauce
+Beef balls;3,portion;1.5,kg,beef-7.0,piece,egg-3.0,piece,tomato;*Mix beef and egg and extrude them as meatballs,*Boil the meatballs,*Put all tomatoes to the hot water,*Continue boil for 15 minutes
+Healthy noodles;2,bowl;0.4,kg,noodels-0.2,kg,carrot;*Boil the water,*Put noodles in the pot,*Put carrot in the pot,*Cook for 15 minutes
+Steam fish;1,portion;0.4,kg,lax-0.2,kg,broccoli;*Put broccoli on fish,*Steam for 15 minutes

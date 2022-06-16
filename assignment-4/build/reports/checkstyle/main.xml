@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.38">
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/ConsoleUi.java">
+<error line="400" column="7" severity="warning" message="变量&apos;ingredientsInRecipe&apos;声明及第一次使用距离7行（最多：3 行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。" source="com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"/>
+<error line="401" column="7" severity="warning" message="变量&apos;comments&apos;声明及第一次使用距离10行（最多：3 行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。" source="com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"/>
+<error line="428" column="5" severity="warning" message="变量&apos;recipeMenuBehaviours&apos;声明及第一次使用距离13行（最多：3 行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。" source="com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"/>
+<error line="433" column="5" severity="warning" message="变量&apos;ingredientsInRecipe&apos;声明及第一次使用距离7行（最多：3 行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。" source="com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"/>
+<error line="434" column="5" severity="warning" message="变量&apos;comments&apos;声明及第一次使用距离10行（最多：3 行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。" source="com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"/>
+<error line="580" column="3" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/FileHandler.java">
+<error line="11" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="69" column="9" severity="warning" message="变量&apos;recipeName&apos;声明及第一次使用距离5行（最多：3 行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。" source="com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"/>
+<error line="70" column="9" severity="warning" message="变量&apos;recipePortion&apos;声明及第一次使用距离5行（最多：3 行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。" source="com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"/>
+<error line="71" column="9" severity="warning" message="变量&apos;recipePortionUnit&apos;声明及第一次使用距离5行（最多：3 行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。" source="com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"/>
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/Ingredient.java">
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/IngredientInRecipe.java">
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/IngredientMenuBehaviours.java">
+<error line="5" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/Main.java">
+<error line="3" severity="warning" message="Javadoc的第一句缺少一个结束时期。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/Option.java">
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/Recipe.java">
+<error line="18" column="3" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/RecipeApplication.java">
+<error line="5" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="27" column="7" severity="warning" message="注释应与第28行代码同样缩进4个缩进符，而不是6个。" source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="65" column="7" severity="warning" message="注释应与第66行代码同样缩进4个缩进符，而不是6个。" source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="107" column="7" severity="warning" message="注释应与第108行代码同样缩进4个缩进符，而不是6个。" source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="126" column="8" severity="warning" message="注释应与第124, 127行代码同样缩进6, 4个缩进符，而不是7个。" source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="138" column="7" severity="warning" message="注释应与第139行代码同样缩进4个缩进符，而不是6个。" source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/RecipeMenuBehaviours.java">
+<error line="7" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="137" severity="warning" message="Javadoc的第一句缺少一个结束时期。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
+<error line="142" column="3" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="166" severity="warning" message="Javadoc的第一句缺少一个结束时期。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
+<error line="189" severity="warning" message="Javadoc的第一句缺少一个结束时期。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
+<error line="201" severity="warning" message="Javadoc的第一句缺少一个结束时期。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
+<error line="212" severity="warning" message="Javadoc的第一句缺少一个结束时期。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
+<error line="220" column="5" severity="warning" message="&apos;if&apos; 后应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="220" column="5" severity="warning" message="WhitespaceAround: &apos;if&apos; is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="227" severity="warning" message="Javadoc的第一句缺少一个结束时期。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
+<error line="235" column="5" severity="warning" message="&apos;if&apos; 后应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="235" column="5" severity="warning" message="WhitespaceAround: &apos;if&apos; is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="242" severity="warning" message="Javadoc的第一句缺少一个结束时期。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
+<error line="250" column="5" severity="warning" message="&apos;if&apos; 后应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="250" column="5" severity="warning" message="WhitespaceAround: &apos;if&apos; is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/Search.java">
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/SearchByIngredientName.java">
+<error line="6" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/SearchByMaxPrice.java">
+<error line="6" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/Users/yuyaoduan/Desktop/LNU/Code/1DV502/assignment4/assignment-4/src/main/java/recipe/SearchByRecipeName.java">
+<error line="6" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+</checkstyle>

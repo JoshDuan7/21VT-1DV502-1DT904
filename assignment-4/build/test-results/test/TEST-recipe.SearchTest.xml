@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="recipe.SearchTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-03-21T20:41:00" hostname="YMacBook.local" time="0.138">
+  <properties/>
+  <testcase name="searchByIngredientName2" classname="recipe.SearchTest" time="0.004"/>
+  <testcase name="searchByRecipeNameTest2" classname="recipe.SearchTest" time="0.003"/>
+  <testcase name="searchByIngredientName" classname="recipe.SearchTest" time="0.001"/>
+  <testcase name="SearchByMaxPrice" classname="recipe.SearchTest" time="0.016"/>
+  <testcase name="SearchByMaxPrice2" classname="recipe.SearchTest" time="0.001"/>
+  <testcase name="searchByRecipeNameTest" classname="recipe.SearchTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
